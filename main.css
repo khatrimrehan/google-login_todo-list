@@ -204,7 +204,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.959);
     color: white;
     align-items: end;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 
