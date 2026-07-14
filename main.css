@@ -6,14 +6,21 @@
 
 html,
 body {
-
+    margin: 0;
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
     background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 78px);
+
 }
 
 main {
@@ -82,7 +89,7 @@ button {
     justify-content: center;
     width: 100%;
     gap: 10px;
-    
+
 }
 
 .plus {
@@ -93,16 +100,19 @@ button {
 p {
     margin: 0;
 }
-.rounded{
+
+.rounded {
     scale: 1.6;
-    
+
 }
-.linee{
+
+.linee {
     border: 0.8px solid rgba(120, 120, 120, 0.107);
     width: 90%;
     margin: 0 auto;
 }
-.subhead{
+
+.subhead {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -110,7 +120,8 @@ p {
     margin: 0 auto;
     font-weight: 600;
 }
-.jstsk{
+
+.jstsk {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -122,10 +133,10 @@ p {
 
 
 .jstsk::-webkit-scrollbar {
-    display: none;                 
+    display: none;
 }
 
-#pent{
+#pent {
     height: 100%;
     width: 100%;
     display: flex;
@@ -133,7 +144,8 @@ p {
     justify-content: center;
     color: #7F8496;
 }
-.tasks{
+
+.tasks {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -147,80 +159,126 @@ p {
     padding-block: 10px;
 
 }
-.editndel , .radionname{
+
+.editndel,
+.radionname {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-.name{
+
+.name {
     white-space: nowrap;
     font-size: 16px;
 }
-.edt{
+
+.edt {
     background-color: #e4ecfe9f;
     padding: 10px;
     border-radius: 17%;
 
-    & i{
+    & i {
         font-size: 22px;
-        color:#4B86F8;
+        color: #4B86F8;
     }
 }
-.del{
+
+.del {
     background-color: #FFEDEC;
     padding: 10px;
     border-radius: 17%;
 
-    & i{
+    & i {
         font-size: 22px;
-        color:#FA675A;
+        color: #FA675A;
     }
 }
 
-
-@media screen and (max-width: 500px){
-main{
-    width: 95%;
-    height: 90%;
-}
-.plus{
-    font-size: 23.5px;
-}
-.heading{
-    padding-bottom: 6px;
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.959);
+    color: white;
+    align-items: end;
 
 }
-h1{
-    font-size: 25px;
+
+#userProfilePicture {
+    width: 40px;
+    height: 40px;
 }
-.para{
-    font-size: 14px;
+
+#userProfilePicture img {
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    border-radius: 50px;
 }
-input{
-    width: 58%;
+
+#userName {
+    margin-bottom: 5px;
 }
-.inpbox{
-    gap: 4px;
-}
-.tasks{
-     padding-inline: 9px;
-    padding-block: 13px;
-}
-.edt , .del{
-    padding: 5px;
-    
-    & i{
-        font-size: 20px;
+
+
+@media screen and (max-width: 500px) {
+    main {
+        width: 95%;
+        height: 90%;
     }
-}
-.rounded{
-    scale: 1.2;
-}
-.radionname{
-    gap: 6px;
-}
-#pent{
-    font-size: 13px;
-}
+
+    .plus {
+        font-size: 23.5px;
+    }
+
+    .heading {
+        padding-bottom: 6px;
+
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    input {
+        width: 58%;
+    }
+
+    .inpbox {
+        gap: 4px;
+    }
+
+    .tasks {
+        padding-inline: 9px;
+        padding-block: 13px;
+    }
+
+    .edt,
+    .del {
+        padding: 5px;
+
+        & i {
+            font-size: 20px;
+        }
+    }
+
+    .rounded {
+        scale: 1.2;
+    }
+
+    .radionname {
+        gap: 6px;
+    }
+
+    #pent {
+        font-size: 13px;
+    }
 }
