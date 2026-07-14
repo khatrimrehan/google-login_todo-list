@@ -204,6 +204,7 @@ nav {
     background-color: rgba(0, 0, 0, 0.959);
     color: white;
     align-items: end;
+    justify-content: space-evenly;
 
 }
 
@@ -224,6 +225,7 @@ nav {
 
 #userName {
     margin-bottom: 5px;
+    font-size: 18px;
 }
 
 
