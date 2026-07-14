@@ -33,7 +33,7 @@ googleLogin.addEventListener("click", () => {
       console.log("Logged in user:", user);
 
       // Redirect after successful login
-      window.location.href = "main.html";
+      window.location.href = "../main.html";
     })
     .catch((error) => {
       console.error("Login failed:", error.code, error.message);
